@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Create</title>
+    <style>
+        #parent{
+            width: 600px;
+            height: 600px;
+            //background: red;
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+            animation: spin 3s infinite;
+        }
+        @keyframes spin {
+            100% {transform: rotate(360deg);}
+        }
+        .common{
+            width: 300px;
+            height: 300px;
+            position: absolute;
+        }
+        .blue{
+            background: blue;
+            border-bottom-left-radius: 300px;
+            border-top-right-radius: 300px;
+            bottom:0px;
+            right:0px;    
+        }
+        .green{
+            background: green;
+            right: 0px;
+            top: 0px;
+            border-top-left-radius: 300px;
+            border-bottom-right-radius: 300px;
+        }
+        .yellow{
+            background: yellow;
+            left: 0px;
+            top: 0px;
+            border-top-right-radius: 300px;
+            border-bottom-left-radius: 300px;
+        }
+        .pink{
+            background: pink;
+            bottom: 0px;
+            left: 0px;
+            border-bottom-right-radius: 300px;
+            border-top-left-radius: 300px;
+        }
+        .rod{
+            background: #000;
+            width: 20px;
+            height: 400px;
+            margin: auto;
+            position: absolute;
+            top: 310px;
+            left: 0;
+            right: 0;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="rod"></div>
+    <div id="parent">
+        
+        <div class="common c1 blue"></div>
+        <div class="common c1 green"></div>
+        <div class="common c1 yellow"></div>
+        <div class="common c1 pink"></div>        
+    </div>
+</body>
+</html>
